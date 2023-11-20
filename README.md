@@ -1,3 +1,2 @@
-# MLDroid
-MLDroid is a framework for Android malware detection using machine learning techniques. The framework provides a set of pre-trained models for detecting known malware families, as well as the ability to train custom models on your own data.
+# An implementatiob of the paper A scalable distributed machine learning approach for attack detection in edge computing environments
 
