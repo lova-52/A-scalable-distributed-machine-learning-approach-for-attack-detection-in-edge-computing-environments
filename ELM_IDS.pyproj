@@ -24,17 +24,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src\add_class.py" />
+    <Compile Include="src\calculate_output_layer_weight.py" />
+    <Compile Include="src\classifier.py" />
     <Compile Include="src\data_anonymize.py" />
-    <Compile Include="src\elm.py" />
-    <Compile Include="src\extract_feature.py" />
-    <Compile Include="src\temp.py" />
-    <Compile Include="src\temp2.py" />
-    <Compile Include="src\temp3.py" />
-    <Compile Include="utils\classifier_menu.py" />
-    <Compile Include="utils\dataset_loader.py" />
-    <Compile Include="utils\data_process.py" />
-    <Compile Include="utils\feature_select.py" />
-    <Compile Include="utils\model_train.py" />
+    <Compile Include="src\extract_features.py" />
+    <Compile Include="utils\temp.py" />
+    <Compile Include="utils\temp2.py" />
+    <Compile Include="utils\temp3.py" />
     <Compile Include="utils\__init__.py" />
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|SuperEnvironment" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sample_multiclass_classification_data.txt" />
+    <Content Include="transformed_feature_vectors.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

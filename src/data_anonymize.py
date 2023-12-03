@@ -2,13 +2,12 @@ import pandas as pd
 import numpy as np
 
 # Load the data from the excel file
-df = pd.read_excel('C:\\Repo\\ELM_IDS\\CTU-13-Dataset\\8\\feature_vectors.xlsx')
+df = pd.read_excel('C:/Repo/ELM_IDS/ELM_IDS/ELM_IDS/dataset/feature_vectors.xlsx')
 
 # Normalize the input data using min-max scaling
 min_vals = df.min()
 max_vals = df.max()
 df = (df - min_vals) / (max_vals - min_vals)
-print(df)
 
 # Generate a random projection matrix and bias vector
 num_features = df.shape[1]
@@ -24,4 +23,4 @@ def sigmoid(x):
 df_transformed = df.apply(lambda x: sigmoid(np.dot(x, a) + b), axis=1, result_type='expand')
 
 #Save the transformed dataframe to a new excel file
-df_transformed.to_excel('C:\\Repo\\ELM_IDS\\CTU-13-Dataset\\8\\transformed_feature_vectors.xlsx', index=False)
+df_transformed.to_excel('C:/Repo/ELM_IDS/ELM_IDS/ELM_IDS/dataset/transformed_feature_vectors.xlsx', index=False)
